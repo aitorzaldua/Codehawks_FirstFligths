@@ -1,66 +1,23 @@
-## Foundry
+## What is a CodeHawks First Flight?
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+First Flights are 7 days long smart contracts auditing challenges characterised by smaller codebases and different rewards mechanisms from our standard smart contract auditing competitions, making them the perfect testing and learning ground for any aspirant smart contract security auditor.
 
-Foundry consists of:
+Every week a new First Flight is announced and will be available on CodeHawks to join for 7 days.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Differently from the CodeHawks smart contract auditing competitions, First Flights do not come with monetary prize pools but grant participants a multiplier on the XP earned by submitting findings.
 
-## Documentation
+For more information: CodeHawks Docs
 
-https://book.getfoundry.sh/
+## Index
 
-## Usage
+### 01.- PasswordStore
 
-### Build
+A smart contract application for storing a password. Users should be able to store a password and then retrieve it later. Others should not be able to access the password.
 
-```shell
-$ forge build
-```
+https://www.codehawks.com/contests/clnuo221v0001l50aomgo4nyn
 
-### Test
+### 02.- Puppy Raffle
 
-```shell
-$ forge test
-```
+This next First Flight audit will have you applying your skills to an NFT Raffle Protocol. Let's make those Pups secure!
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+https://www.codehawks.com/contests/clo383y5c000jjx087qrkbrj8
