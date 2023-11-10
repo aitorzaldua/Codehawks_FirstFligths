@@ -2,7 +2,7 @@
 pragma solidity 0.8.18;
 
 import {Script, console2} from "forge-std/Script.sol";
-import {PasswordStore} from "../src/PasswordStore.sol";
+import {PasswordStore} from "../../src/01-PasswordStore/PasswordStore.sol";
 
 contract DeployPasswordStore is Script {
     function run() public returns (PasswordStore) {

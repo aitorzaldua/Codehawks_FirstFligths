@@ -15,15 +15,6 @@ contract PasswordStore {
 
     event SetNetPassword();
 
-    /*
-    modifier onlyOwner() {
-        if (msg.sender != s_owner) {
-            revert PasswordStore__NotOwner();
-        }
-        _;
-    }
-    */
-
     constructor() {
         s_owner = msg.sender;
     }

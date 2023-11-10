@@ -2,8 +2,8 @@
 pragma solidity 0.8.18;
 
 import {Test, console} from "forge-std/Test.sol";
-import {PasswordStore} from "../src/PasswordStore.sol";
-import {DeployPasswordStore} from "../script/DeployPasswordStore.s.sol";
+import {PasswordStore} from "../../src/01-PasswordStore/PasswordStore.sol";
+import {DeployPasswordStore} from "../../script/01-PasswordStore/DeployPasswordStore.s.sol";
 
 contract PasswordStoreTest is Test {
     PasswordStore public passwordStore;
@@ -28,7 +28,6 @@ contract PasswordStoreTest is Test {
 
     function test_non_owner_reading_password_reverts() public {
         vm.startPrank(address(1));
-
         vm.expectRevert(PasswordStore.PasswordStore__NotOwner.selector);
         passwordStore.getPassword();
     }
