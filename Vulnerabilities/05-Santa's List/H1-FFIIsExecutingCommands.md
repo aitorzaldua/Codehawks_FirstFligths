@@ -43,6 +43,8 @@ drwxr-xr-x   4 aitor  staff    128 Dec  6 09:45 test
 
 :-( ups.
 
+With the test testPwned() We run the instruction touch and have created the file youve-been-pwned
+
 ### Impact
 
 In this case, the elves were just being naughty, but a malicious developer could use this kind of test to control or destroy our computer.
